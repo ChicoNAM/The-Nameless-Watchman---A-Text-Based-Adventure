@@ -12,6 +12,8 @@ Requirements : Python3 (to check your version, use)
 
     python3 main.py
 
+- 2024 - 08 - 30
+    - fixed minor bugs (still some left)
 
 - 2024 - 08 - 30
     - removed unused dependency
