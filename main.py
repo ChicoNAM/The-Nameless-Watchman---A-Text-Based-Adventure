@@ -67,9 +67,13 @@ def game():
     # battle chapter 1 (fixed)
     
     Battle.combat(player_1, ani_enemy_1)
+    
+    # bug (after combat_outcome it returns None)
+    
     Battle.combat_outcome(player_1, ani_enemy_1, chapter_1_cobblestone_path_fight_outcome_failure, chapter_1_cobblestone_path_fight_outcome_success)
     
     print('...to be continued.')
+    press_enter()
     
 if __name__ == '__main__':
     game()

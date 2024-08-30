@@ -33,6 +33,7 @@ class Player(Character):
             else:
                 target.health = 0
                 print(f'{target.name} died.')
+                input('>>> ')
                 break
             flag = False
                 
@@ -49,8 +50,6 @@ class Enemy(Character):
             flag = False
         
         while flag == True:
-            print('')
-            print(f'{self.name} is attacking.')
 
             if (self.attack - target.defense) <= 0:
                 target.health = target.health - 1
@@ -62,6 +61,7 @@ class Enemy(Character):
             else: 
                 target.health = 0
                 print(f'You have been mortally wounded. Your life flashes before your eyes.\n')
+                input('>>> ')
                 break
             
             flag = False

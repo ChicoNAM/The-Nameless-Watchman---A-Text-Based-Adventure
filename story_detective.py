@@ -9,7 +9,7 @@ class Story:
         os.system("cls")
         for char in story:
             print(char, end = "", flush = True)
-            time.sleep(0.01)
+            time.sleep(0)
         
 # Chapter 0 - Intro
 

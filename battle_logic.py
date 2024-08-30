@@ -56,9 +56,19 @@ class Battle():
                     combat_input = input(f'1. Attack {enemy.name}.\n2. Do nothing.\n>>> ')
     
     def combat_outcome(player, enemy, outcome_1, outcome_2):
-
-        if player.health < 1: 
-            print(outcome_1)
-        elif enemy.health < 1:
-            print(outcome_2)
+        
+        flag = True
+        
+        while flag == True:
+            
+            if player.health < 1: 
+                print(Story.story_section(outcome_1))
+                input('>>> ')
+                break
+            elif enemy.health < 1:
+                print(Story.story_section(outcome_2))
+                input('>>> ')
+                break
+            
+            flag == False
 
