@@ -12,6 +12,11 @@ Requirements : Python3 (to check your version, use)
 
     python3 main.py
 
+- 2024 - 09 - 04
+    - removed comments
+    - removed unused dependency
+    - changed line in battle logic (outcome returned None, now fixed)
+
 - 2024 - 08 - 30
     - fixed minor bugs (still some left)
 

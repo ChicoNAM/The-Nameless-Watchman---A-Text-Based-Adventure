@@ -1,14 +1,14 @@
-import os
 from enemy_variations import *
 from player_variations import *
 from story_detective import *
 from battle_logic import *
 
-# adding a line for the end of paragraphs to not skip text to fast (works so far)
+# adding a line for the end of paragraphs to not skip text to fast
 def press_enter():
     input('>>> ')
 
-# game function to start the story (works)
+# game function to start the story
+
 def game():
     print('Greetings.\n')
     player_input = input('Type "play" to begin, or type "quit" to exit. >>> ')
@@ -64,11 +64,11 @@ def game():
             print('\nThere is not much time. You have to decide.\n')
             user_choice = input('1: Investigate the Source \n2: Continue Walking, but Faster\n3: Take a Defensive Position\n>>> ')
     
-    # battle chapter 1 (fixed)
+    # battle chapter 1
     
     Battle.combat(player_1, ani_enemy_1)
     
-    # bug (after combat_outcome it returns None)
+    # battle outcome
     
     Battle.combat_outcome(player_1, ani_enemy_1, chapter_1_cobblestone_path_fight_outcome_failure, chapter_1_cobblestone_path_fight_outcome_success)
     
